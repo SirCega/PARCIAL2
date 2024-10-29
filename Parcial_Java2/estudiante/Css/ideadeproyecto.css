@@ -1,0 +1,94 @@
+/* Estilo para el cuerpo */
+body {
+    background: url('../img/estudiante.jpg') no-repeat center center fixed; /* Fondo de la página */
+    background-size: cover;
+    color: #ffffff; /* Color del texto */
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+.header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6f61; /* Línea de color */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem; /* Aumentar el tamaño del título */
+    color: #ffffff; /* Color blanco para el título */
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7); /* Sombra para el texto */
+}
+
+/* Botón "Volver" */
+.btn-back {
+    background-color: #ff6f61; /* Color del botón "Volver" */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px; /* Ancho máximo */
+    margin: auto; /* Centrar */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Sombra más fuerte */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilo para la tabla */
+.table {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para la tabla */
+}
+
+.table th, .table td {
+    text-align: center; /* Centrar texto en la tabla */
+}
+
+.table th {
+    background-color: #007bff; /* Color de fondo de los encabezados de tabla */
+    color: white; /* Color del texto de los encabezados */
+}
+
+/* Estilo para los botones de acción */
+.btn-custom {
+    background-color: #007bff; /* Color del botón "Elegir" */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo para el footer */
+.footer {
+    text-align: center;
+    padding: 1.2rem;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    color: #fff;
+    font-size: 1rem; /* Aumentar el tamaño de la fuente del footer */
+    border-top: 2px solid #ff3333; /* Línea superior para el footer */
+}
+
+/* Alertas */
+.alert {
+    margin: 20px 0; /* Espacio alrededor de las alertas */
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2.5rem; /* Tamaño del título en pantallas pequeñas */
+    }
+}

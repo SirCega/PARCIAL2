@@ -1,0 +1,83 @@
+/* Fondo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/director.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 800px;
+    width: 90%;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    position: relative; /* Permite que el botón de regresar se posicione relativo al contenedor */
+}
+
+/* Título */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Tabla */
+.table {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 15px;
+}
+
+.table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.table tbody tr:hover {
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón de regreso al login en la esquina superior derecha del contenedor */
+.back-to-login {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.btn-back {
+    background-color: #ff3333; /* Color rojo */
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-back:hover {
+    background-color: #cc0000; /* Rojo más oscuro en hover */
+    transform: translateY(-3px); /* Efecto flotante */
+}

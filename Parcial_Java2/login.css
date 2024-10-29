@@ -1,0 +1,65 @@
+body {
+    font-family: 'Open Sans', sans-serif; /* Asegúrate de que la fuente sea la misma */
+    background-image: url('img/fondoindex.jpg'); /* Cambia la ruta a tu imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.login-container {
+    max-width: 400px; /* Ancho máximo de la caja de login */
+    margin: 0; /* Eliminamos el margen para centrar usando flexbox */
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7); /* Fondo más oscuro y semitransparente */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más prominente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
+}
+
+.login-container:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+h2 {
+    font-size: 2rem; /* Aumenta el tamaño de la fuente del título */
+    color: #ffffff; /* Cambia el color del texto del título a blanco */
+    margin-bottom: 1.5rem; /* Espacio debajo del título */
+}
+
+.form-group label {
+    font-weight: 700; /* Negrita para las etiquetas */
+    color: #dddddd; /* Color de las etiquetas más claro */
+    font-size: 1.1rem; /* Tamaño de fuente de las etiquetas */
+}
+
+.form-control {
+    border-radius: 5px; /* Bordes redondeados para campos de entrada */
+    padding: 0.75rem; /* Relleno de los campos */
+    font-size: 1rem; /* Tamaño de fuente de los campos */
+}
+
+.btn-primary {
+    background-color: #ff4d4d; /* Color rojo para el botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    padding: 0.75rem; /* Relleno del botón */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    width: 100%; /* Ancho completo */
+    transition: background-color 0.3s; /* Transición suave para el color del botón */
+}
+
+.btn-primary:hover {
+    background-color: #cc0000; /* Color más oscuro al pasar el ratón */
+}
+
+.alert {
+    margin-bottom: 1.5rem; /* Espacio debajo de la alerta */
+    font-size: 1rem; /* Tamaño de fuente de la alerta */
+    color: #ffffff; /* Cambia el color del texto de la alerta a blanco */
+}

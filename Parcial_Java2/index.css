@@ -1,0 +1,238 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Cambia la fuente */
+    line-height: 1.6;
+    color: #333;
+    background: url('img/fondoindex.jpg') center/cover no-repeat; /* Fondo de toda la página */
+    background-size: cover; /* Asegura que la imagen cubra toda la página */
+}
+
+/* Superposición para mejorar la legibilidad */
+.section {
+    position: relative; /* Para el pseudo-elemento */
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
+    z-index: -1; /* Coloca la superposición detrás del contenido */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(34, 34, 34, 0.9); /* Fondo más oscuro */
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Transición suave */
+}
+
+.navbar nav ul li a:hover {
+    color: #ff6b6b; /* Cambio de color al pasar el ratón */
+}
+
+.login-btn {
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s; /* Transición suave */
+}
+
+.login-btn:hover {
+    background: #ff4c4c; /* Color más oscuro al pasar el ratón */
+}
+
+/* Hero Section */
+.hero {
+    color: #fff;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* Para el texto */
+}
+
+.hero-content {
+    z-index: 1; /* Asegura que el contenido esté por encima del fondo */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    opacity: 0; /* Empieza invisible */
+    animation: fadeIn 2s ease forwards; /* Aplica la animación */
+    font-weight: 700; /* O puedes usar 'bold' */
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Aparece desde abajo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content p {
+    font-size: 1.5rem; /* Ajusta el tamaño a lo que desees */
+    margin-bottom: 2rem; /* Puedes ajustar el margen si lo deseas */
+}
+
+
+.projects {
+    padding: 4rem 5%; /* Más espacio alrededor */
+    color: #000000; /* Asegúrate de que el texto sea legible sobre el fondo */
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 2rem; /* Más espacio debajo */
+    font-size: 3rem; /* Aumenta el tamaño del texto */
+    font-weight: 900; /* Hace que el texto sea más grueso */
+    color: #fff; /* Cambia el color si es necesario para asegurar legibilidad */
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Más espacio entre tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se adapten */
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para las tarjetas */
+    padding: 1.5rem; /* Más espacio interior */
+    width: 300px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más prominente */
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s; /* Transición suave */
+    color: black; /* Cambiar color del texto a negro */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Levanta la tarjeta al pasar el ratón */
+}
+
+
+.about {
+    padding: 4rem 5%; /* Aumenta el padding */
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se adapten en pantallas más pequeñas */
+    color: #fff; /* Asegúrate de que el texto sea legible sobre el fondo */
+}
+
+.about h2 {
+    font-size: 2rem; /* Aumenta el tamaño del título */
+
+    text-align: center; /* Centra el título */
+    font-size: 3rem; /* Tamaño del texto */
+    font-weight: 900; /* Grosor del texto */
+    margin-bottom: 2rem; /* Más espacio debajo */
+}
+
+.about p {
+    font-size: 1.5rem; /* Aumenta el tamaño de la descripción */
+}
+
+.about h3 {
+    font-size: 1.5rem; /* Aumenta el tamaño de los subtítulos */
+}
+.about-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Espacio entre miembros del equipo */
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    width: 150px; /* Ajusta según sea necesario */
+}
+
+.team-member img {
+    width: 100%; /* Asegura que la imagen ocupe el espacio disponible */
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+}
+
+.cta-btn {
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: #ff4c4c;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #222;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .projects-grid {
+        flex-direction: column;
+        align-items: center; /* Centra las tarjetas en móviles */
+    }
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .about-description {
+        text-align: center;
+    }
+}

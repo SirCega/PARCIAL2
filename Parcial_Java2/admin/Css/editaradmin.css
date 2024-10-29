@@ -1,0 +1,137 @@
+/* Fondo del body */
+body {
+    background-image: url('../img/Editaradmin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    font-family: 'Roboto', sans-serif; /* Cambio a una fuente más moderna */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+.encabezado {
+    background: rgba(0, 0, 0, 0.8); /* Mayor opacidad */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.encabezado h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Contenedor de la tarjeta */
+.card-container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.95); /* Mayor opacidad */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px; /* Mayor padding para mejor espaciado */
+    margin: 80px auto; /* Centrado y separado del encabezado */
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-container:hover {
+    transform: translateY(-5px); /* Mayor efecto de elevación */
+}
+
+/* Contenido de la tarjeta */
+.content .heading {
+    font-size: 1.5rem;
+    font-weight: 600; /* Mayor peso */
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px; /* Más espacio inferior */
+}
+
+/* Área de formulario */
+.input-area {
+    margin-top: 20px;
+}
+
+/* Campos de entrada */
+.form input[type="text"],
+.form input[type="email"] {
+    width: 100%;
+    padding: 10px; /* Mayor padding */
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Color de borde más suave */
+    border-radius: 5px; /* Mayor radio para bordes */
+    font-size: 1rem;
+    transition: border-color 0.2s; /* Efecto en borde */
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus {
+    border-color: #48bb78; /* Cambio de color en enfoque */
+}
+
+/* Tabla */
+.table {
+    width: 100%;
+    color: #333;
+    background-color: transparent;
+}
+
+.table td {
+    padding: 12px; /* Mayor padding */
+    vertical-align: middle;
+}
+
+/* Botones */
+.btn {
+    padding: 10px 20px; /* Mayor padding */
+    font-size: 0.95rem; /* Mayor tamaño */
+    border-radius: 5px; /* Mayor radio para bordes */
+    font-weight: 600; /* Mayor peso */
+    text-align: center;
+    width: auto;
+}
+
+.btn-success {
+    background-color: #48bb78;
+    color: #fff;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #38a169;
+}
+
+.btn-primary {
+    background-color: #5a67d8;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4c51bf;
+}
+
+/* Mensaje de éxito */
+.para {
+    font-size: 1rem;
+    color: #48bb78;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: #f7fafc;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: auto;
+}

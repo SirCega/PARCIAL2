@@ -1,0 +1,137 @@
+/* Estilo para el cuerpo */
+body {
+    background: url('../img/estudiante.jpg') no-repeat center center fixed; /* Fondo de la página */
+    background-size: cover;
+    color: #ffffff; /* Color del texto */
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para permitir que el footer se mantenga al fondo */
+    flex-direction: column; /* Dirección del flex */
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* Estilo para el encabezado */
+.header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6f61; /* Línea de color */
+    position: relative; /* Para posicionar el botón de cerrar sesión */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem; /* Aumentar el tamaño del título */
+    color: #000; /* Color negro para el título */
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7); /* Sombra para el texto */
+}
+
+h2 {
+    color: #000; /* Color negro para el h2 */
+    text-align: center; /* Centrar el h2 */
+    margin: 20px 0; /* Espacio alrededor del h2 */
+}
+
+/* Estilo para el botón de cerrar sesión */
+.btn-logout {
+    background-color: #ff6f61; /* Color del botón de cerrar sesión */
+    color: rgb(255, 0, 0); /* Color del texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute; /* Posicionar el botón en la esquina */
+    top: 20px; /* Ajusta según sea necesario */
+    right: 20px; /* Asegura que esté en la parte derecha */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.btn-logout:hover {
+    background-color: #ff3a3a; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px; /* Ancho máximo */
+    margin: auto; /* Centrar */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Sombra más fuerte */
+    margin-top: 20px; /* Margen superior */
+    flex: 1; /* Permitir que el contenedor crezca */
+}
+
+/* Estilo para los botones de administración */
+.btn-container {
+    display: flex; /* Para alinear los botones */
+    flex-direction: column; /* Alineación en columna */
+    gap: 15px; /* Espacio entre botones */
+    margin-top: 20px;
+}
+
+.btn-admin {
+    background-color: #007bff; /* Color del botón */
+    color: black; /* Cambiado a negro */
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    font-size: 1.2rem; /* Tamaño de fuente aumentado */
+    font-weight: bold; /* Texto en negrita */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para los botones */
+}
+
+/* Cambia el color a celeste y transparente al pasar el ratón */
+.btn-admin:hover {
+    background-color: rgba(173, 216, 230, 0.8); /* Color celeste con transparencia */
+    color: black; /* Mantener el texto en negro */
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2.5rem; /* Ajustar tamaño del título en móviles */
+    }
+
+    .btn-admin {
+        padding: 12px; /* Ajustar tamaño del botón en móviles */
+        font-size: 1rem; /* Tamaño de fuente en móviles */
+    }
+}
+
+/* Estilo para el footer */
+.footer {
+    text-align: center;
+    padding: 1.2rem;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    color: #fff;
+    font-size: 1rem; /* Aumentar el tamaño de la fuente del footer */
+    border-top: 2px solid #ff3333; /* Línea superior para el footer */
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+/* Efectos adicionales para los botones */
+.btn-container a {
+    position: relative; /* Para permitir efectos */
+}
+
+.btn-container a::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; /* Bordes redondeados */
+    opacity: 0; /* Ocultar por defecto */
+    transition: opacity 0.4s ease; /* Transición suave */
+}
+
+.btn-container a:hover::before {
+    opacity: 1; /* Mostrar al pasar el ratón */
+}

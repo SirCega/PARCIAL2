@@ -1,0 +1,85 @@
+/* Estilo para el cuerpo */
+body {
+    background: url('../img/estudiante.jpg') no-repeat center center fixed; /* Fondo de la página */
+    background-size: cover;
+    color: #ffffff; /* Color del texto */
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+.header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6f61; /* Línea de color */
+}
+
+.header div {
+    font-size: 2rem; /* Tamaño del texto */
+    color: #ffffff; /* Color blanco para el texto */
+    margin-bottom: 10px; /* Espacio debajo del texto */
+}
+
+.header a {
+    color: #ff6f61; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1.2rem; /* Tamaño del enlace */
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 600px; /* Ancho máximo */
+    margin: auto; /* Centrar */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Sombra */
+    margin-top: 30px; /* Margen superior */
+}
+
+/* Título del formulario */
+.form-container h2 {
+    text-align: center; /* Centrar el texto */
+    color: #333; /* Color del título */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilo para los campos del formulario */
+.form-group label {
+    font-weight: bold; /* Texto en negrita */
+    color: #000; /* Color negro para los subtítulos */
+}
+
+.form-control {
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón "SUBIR" */
+.btn-custom {
+    background-color: #ff6f61; /* Color del botón */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-custom:hover {
+    background-color: #e55a51; /* Color más oscuro al pasar el ratón */
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .header div {
+        font-size: 1.5rem; /* Tamaño del texto en pantallas pequeñas */
+    }
+
+    .header a {
+        font-size: 1rem; /* Tamaño del enlace en pantallas pequeñas */
+    }
+
+    .form-container {
+        padding: 20px; /* Menos padding en pantallas pequeñas */
+    }
+}

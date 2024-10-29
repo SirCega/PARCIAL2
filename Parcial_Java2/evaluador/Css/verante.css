@@ -1,0 +1,164 @@
+/* Fondo de la página */
+body {
+    background: url('../img/evaluador.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Asegura que ocupe toda la altura */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #000; /* Color negro para el título */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Botón de regresar */
+.btn-primary {
+    background-color: #ff0000; /* Color rojo para el botón */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-primary:hover {
+    background-color: #cc0000; /* Color más oscuro al pasar el ratón */
+}
+
+/* Tabla */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar bordes de las celdas */
+    background-color: #f8f9fa; /* Fondo claro para la tabla */
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.table th {
+    background-color: rgba(0, 123, 255, 0.7);
+    color: #fff;
+    border-bottom: 2px solid #0056b3; /* Línea inferior en encabezados */
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+/* Botones */
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px; /* Tamaño del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo para el formulario de opciones */
+form {
+    margin: 20px 0; /* Margen superior e inferior */
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+}
+
+.form-control {
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    width: auto; /* Ajustar ancho según el contenido */
+    margin-right: 10px; /* Espaciado entre el select y el botón */
+    transition: border-color 0.3s ease; /* Transición suave en el borde */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Color de borde al enfocar */
+    outline: none; /* Sin contorno por defecto */
+}
+
+/* Mensajes de estado */
+tbody tr td {
+    font-size: 1rem;
+}
+
+/* Espaciado en la tabla */
+tbody tr {
+    transition: background-color 0.3s; /* Suave transición en filas */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternar colores de filas */
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Color al pasar el ratón */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem; /* Ajustar padding en pantallas pequeñas */
+    }
+    
+    h1 {
+        font-size: 2rem; /* Ajustar tamaño de título */
+    }
+
+    /* Estilo para el botón de regresar en la parte superior */
+    .d-flex {
+        margin-bottom: 20px; /* Margen inferior para separar del contenido */
+    }
+
+    .btn-primary {
+        background-color: #ff0000; /* Color del botón */
+        color: #fff; /* Texto blanco */
+        padding: 10px 20px; /* Espaciado interno */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        text-decoration: none; /* Sin subrayado */
+        transition: background-color 0.3s ease; /* Transición suave */
+        position: relative; /* Posicionamiento relativo */
+    }
+
+    .btn-primary:hover {
+        background-color: #cc0000; /* Color más oscuro al pasar el ratón */
+    }
+
+    .form-control {
+        width: 100%; /* Campos de formulario ocupan el 100% en móviles */
+        margin-right: 0; /* Sin margen derecho en móviles */
+        margin-bottom: 10px; /* Margen inferior en móviles */
+    }
+
+    form {
+        flex-direction: column; /* Cambiar dirección a columna en móviles */
+    }
+}

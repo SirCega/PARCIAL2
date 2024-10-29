@@ -1,0 +1,60 @@
+/* Estilo general del cuerpo */
+body {
+    background: url('../img/evaluador.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #fff; /* Cambiado a blanco */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Asegura que ocupe toda la altura */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para mensajes de alerta */
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #0056b3; /* Color del texto */
+    background-color: rgba(173, 216, 230, 0.8); /* Fondo claro */
+    border: 1px solid #0056b3; /* Borde azul */
+    font-size: 1.1rem; /* Tamaño de fuente aumentado */
+    font-weight: bold; /* Grosor aumentado */
+}
+
+/* Estilo para el botón de volver */
+.btn {
+    display: inline-block;
+    background-color: #ff0000; /* Color rojo */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición suave */
+    margin-top: 20px; /* Margen superior */
+    font-size: 1.1rem; /* Tamaño de fuente aumentado */
+    font-weight: bold; /* Grosor aumentado */
+}
+
+.btn:hover {
+    background-color: #cc0000; /* Color más oscuro al pasar el ratón */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem; /* Ajustar padding en pantallas pequeñas */
+    }
+}

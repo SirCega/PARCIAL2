@@ -1,0 +1,81 @@
+/* Estilo del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+.encabezado {
+    text-align: center;
+    background-color: #007bff; /* Color azul para el encabezado */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la tarjeta que contiene la tabla */
+.card-container {
+    max-width: 800px; /* Ancho máximo de la tarjeta */
+    margin: 0 auto; /* Centra la tarjeta */
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Eliminar bordes dobles */
+    margin-bottom: 20px; /* Espacio debajo de la tabla */
+}
+
+/* Estilo de las celdas de la tabla */
+th, td {
+    padding: 12px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+    border-bottom: 1px solid #dee2e6; /* Línea inferior */
+}
+
+/* Estilo para el encabezado de la tabla */
+th {
+    background-color: #007bff; /* Color de fondo azul para el encabezado */
+    color: white; /* Color del texto en el encabezado */
+}
+
+/* Estilo para las filas de la tabla al pasar el mouse */
+tr:hover {
+    background-color: #f1f1f1; /* Color de fondo claro al pasar el mouse */
+}
+
+/* Estilo para los botones */
+input[type="submit"] {
+    padding: 8px 12px; /* Espaciado interno de los botones */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilo para el botón de eliminar */
+input.btn-danger {
+    background-color: #dc3545; /* Color rojo para el botón de eliminar */
+    color: white; /* Color del texto */
+}
+
+/* Estilo para el botón de editar */
+input.btn-primary {
+    background-color: #007bff; /* Color azul para el botón de editar */
+    color: white; /* Color del texto */
+}
+
+/* Estilo para el botón de nuevo profesor */
+.custom-button {
+    background-color: #28a745; /* Color verde para el botón de nuevo profesor */
+    color: white; /* Color del texto */
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Estilo del pie de página */
+.footer {
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Margen superior */
+}

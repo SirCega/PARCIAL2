@@ -1,0 +1,111 @@
+/* Fondo */
+body {
+    background: url('../img/coordinador.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+/* Botón de regreso */
+.btn-back {
+    background-color: #fd0909;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+.btn-back:hover {
+    background-color: #0056b3;
+}
+
+/* Tabla */
+.table {
+    width: 100%;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Encabezado de tabla */
+.table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table th, .table td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Filas de la tabla */
+.table tbody tr {
+    transition: background-color 0.3s;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Suave cambio de color al pasar el ratón */
+}
+
+/* Colores alternos en las filas */
+.table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Estilo de las celdas de texto importante */
+.table tbody tr td {
+    font-size: 0.95rem;
+}
+
+/* Botón en la tabla */
+.table .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.table .btn:hover {
+    background-color: #b30000;
+}
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1.2rem;
+    border-top: 3px solid #ff3333;
+    margin-top: auto;
+}

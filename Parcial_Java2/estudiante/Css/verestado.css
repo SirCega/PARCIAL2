@@ -1,0 +1,100 @@
+/* Estilo para el cuerpo */
+body {
+    background: url('../img/estudiante.jpg') no-repeat center center fixed; /* Fondo de la página */
+    background-size: cover;
+    color: #ffffff; /* Color del texto */
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    margin-top: 30px; /* Margen superior */
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    flex-direction: column; /* Alinear en columna */
+    height: calc(100vh - 30px); /* Altura total menos margen superior */
+}
+
+/* Estilo para el encabezado */
+h1 {
+    text-align: center; /* Centrar el texto */
+    color: #ffffff; /* Color del título */
+    margin-bottom: 20px; /* Margen inferior */
+    font-size: 2.5rem; /* Aumentar tamaño del título */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para el título */
+}
+
+/* Estilo para la tabla */
+.table {
+    width: 80%; /* Ancho de la tabla */
+    max-width: 800px; /* Ancho máximo de la tabla */
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra más suave */
+    font-size: 1.2rem; /* Aumentar tamaño de fuente de la tabla */
+}
+
+/* Estilo para los encabezados de la tabla */
+.table thead th {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+    color: #ffcc00; /* Color del texto en encabezados - dorado */
+    padding: 15px; /* Aumentar el padding */
+    border-bottom: 3px solid #ffcc00; /* Línea inferior dorada */
+}
+
+/* Estilo para las celdas de la tabla */
+.table tbody td {
+    vertical-align: middle; /* Alinear verticalmente el contenido */
+    padding: 15px; /* Aumentar el padding de las celdas */
+    color: #333; /* Color del texto en las celdas */
+}
+
+/* Estilo para las celdas en hover */
+.table tbody tr:hover {
+    background-color: rgba(255, 204, 0, 0.3); /* Fondo amarillo suave en hover */
+}
+
+/* Estilo para los enlaces */
+.table a {
+    color: #007bff; /* Color del enlace - azul */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.table a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    color: #0056b3; /* Color azul más oscuro al hacer hover */
+}
+
+/* Estilo para el botón de regresar */
+.btn-secondary {
+    background-color: red; /* Color de fondo rojo */
+    color: #fff; /* Color del texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    position: absolute; /* Posición absoluta para colocarlo en la parte superior derecha */
+    top: 20px; /* Espacio desde la parte superior */
+    right: 20px; /* Espacio desde la derecha */
+}
+
+/* Efecto hover para el botón */
+.btn-secondary:hover {
+    background-color: darkred; /* Color más oscuro al pasar el ratón */
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Tamaño del título en pantallas pequeñas */
+    }
+
+    .table {
+        font-size: 1rem; /* Tamaño de fuente en tablas para pantallas pequeñas */
+    }
+}

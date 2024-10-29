@@ -1,0 +1,115 @@
+/* Fondo */
+body {
+    background: url('../img/coordinador.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Contenedor de resultados */
+.results-container {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Ajustar el contenedor de la tabla para manejar el desbordamiento */
+.table-responsive {
+    overflow-x: auto; /* Permitir el scroll horizontal */
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+/* Formulario */
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Botón */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje informativo */
+.message {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+/* Respuesta no encontrada */
+.message-error {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.footer {
+    text-align: center;
+    padding: 1.2rem;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+    border-top: 2px solid #ff3333; /* Línea superior para el footer */
+}
